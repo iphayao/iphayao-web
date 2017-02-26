@@ -1,69 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Welcome to Firebase Hosting</title>
-    <style media="screen">
-      body {
-        font-family: Roboto, Arial, sans-serif;
-        background: #ECEFF1;
-        color: rgba(0,0,0,0.87);
-      }
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-      a {
-        color: rgb(3,155,229);
-      }
+    <title>Phayao Boonon</title>
+    
+    <link href="img/favicon.png" rel="icon" sizes="32x32">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-      #message {
-        max-width: 400px;
-        margin: 40px auto;
-        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
-        border-radius: 2px;
-        background: white;
-        padding: 16px 24px;
-      }
 
-      #message h1 {
-        font-size: 22px;
-        font-weight: 500;
-        text-align: center;
-        margin: 0 0 16px;
-      }
-
-      #message p {
-        font-weight: 300;
-        line-height: 150%;
-      }
-
-      #message ul {
-        list-style: none;
-        margin: 16px 0 0;
-        padding: 0;
-        text-align: center;
-      }
-
-      #message li a {
-        display: inline-block;
-        padding: 8px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 500;
-        background: rgb(3,155,229);
-        color: white;
-        border: 1px solid rgb(3,155,229);
-        border-radius: 3px;
-        font-size: 14px;
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
-      }
-    </style>
   </head>
   <body>
-    <div id="message">
-      <h1>Welcome to Firebase Hosting</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <ul>
-        <li><a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a></li>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand">
+          <a href="#top">Phayao Boonon</a>
+        </li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#">Developer Blog</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Project</a></li>
       </ul>
-    </div>
+    </nav>
+    <!-- Header -->
+    <header id="top" class="header">
+      <div class="text-vertical-center">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 class="hello">Hi, I'm Phayao.</h1>
+        <h3 style="color:#bbbfbd">Software Developer</h3>
+        <br>
+        <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+      </div>
+    </header>
+    <!-- About -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p class="lead">Welcome to my simple portfolio space</p>
+            <p class="lead">Here you can find a few thing about me including my projects, resume and blog.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+            <ul class="list-inline">
+              <li><a href="https://github.com/iphayao" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a></li>
+              <li><a href="https://twitter.com/iphayao" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a></li>
+              <li><a href="https://www.facebook.com/iphayao" target="_blank"><i class="fa fa-facebook-square fa-fw fa-3x"></i></a></li>
+              <li><a href="https://medium.com/@phayao" target="_blank"><i class="fa fa-medium fa-fw fa-3x"></i></a></li>
+              <li><a href="https://th.linkedin.com/in/phayao" target="_blank"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a></li>
+            </ul>
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; Phayao Boonon</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section id="service" class="service bg-primary"></section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    // Close the sidebar menu
+    $("#menu-close").click(function(e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#sidebar-wrapper").toggleClass("active");
+    })
+    </script>
   </body>
 </html>
