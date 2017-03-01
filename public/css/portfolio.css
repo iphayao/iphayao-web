@@ -16,14 +16,14 @@ body {
 
 .hello {
     color: #e0e1e2;
-    background-color: rgba(51,122,183,0.6);
+    background-color: rgba(26,124,240,0.6);
 }
 
 .hello:hover,
 .hello:focus,
 .hello:active {
     color: #e0e1e2;
-    background-color: rgba(51,122,183,0.65);
+    background-color: rgba(26,124,240,0.8);
     text-decoration: none;
 }
 
